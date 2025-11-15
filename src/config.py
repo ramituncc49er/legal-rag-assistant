@@ -1,5 +1,5 @@
 """
-config.py
+config.py for RAG Engine
 """
 import os
 
