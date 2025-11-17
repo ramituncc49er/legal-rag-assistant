@@ -2,7 +2,8 @@
 This repository contains source code for a RAG-based LLM assistant for U.S. Supreme Court case law built on CourtListener and SCDB data.
 
 Key features:
-- Dense + BM25 hybrid retrieval using LanceDB to index Supreme Court opinions.  
+- Built using subset of the **CourtListener dataset (4.6M+ records)**, selecting only U.S. Supreme Court cases and matching them with SCDB metadata.
+- Dense + BM25 hybrid retrieval using LanceDB to index Supreme Court opinions.
 - Domain-specific prompt templates tailored for question answering and citation.
 - End-to-end system: ingestion → chunking → embedding → retrieval → LLM inference → evaluation.
 
