@@ -14,6 +14,7 @@ Key features:
 
 ```text
 legal_rag_assistant/
+├─src/
 ├─ app.py               # Streamlit interactive demo of the assistant
 ├─ config.py            # Configuration / environment variable handling
 ├─ rag_engine.py        # Core RAG engine (retriever + generator)
