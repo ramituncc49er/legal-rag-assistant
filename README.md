@@ -64,11 +64,9 @@ ollama run mistral:7b-instruct                         # Verify the model
 
 ## Roadmap / TODO
 
-This is an early building block toward a long-term vision:  
-**an AI-augmented legal assistant capable of reducing the time and cognitive load involved in complex written legal processes.**
+This is an early building block toward a long-term vision:  **an AI-augmented legal assistant capable of reducing the time and cognitive load involved in complex written legal processes.**
 
 ### AI Lawyer (Long-Term Vision)
-These are the innovative areas that reflect your long-term intent:
 
 - [ ] Automated drafting of:
   - case summaries  
