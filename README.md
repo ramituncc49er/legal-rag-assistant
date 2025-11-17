@@ -49,7 +49,7 @@ The Streamlit app uses **Mistral 7B Instruct** served locally through **Ollama**
 - **Model:** `mistral:7b-instruct`
 - **Provider:** [Ollama](https://ollama.com/)
 
-### 🔧 Setting up Mistral in Ollama
+### Setting up Mistral in Ollama
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh          # Install Ollama
