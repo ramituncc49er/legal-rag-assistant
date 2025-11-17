@@ -12,6 +12,7 @@ Key features:
 
 ## 🧱 Repository Structure
 
+```text
 legal_rag_assistant/
 ├─ app.py # Streamlit interactive demo of the assistant
 ├─ config.py # Configuration / environment variable handling
@@ -25,6 +26,11 @@ legal_rag_assistant/
 ├─ corpus_builder.py # Corpus assembly from raw CourtListener + SCDB data
 ├─ ingest.py # Scripts to ingest into LanceDB
 │
+├─ llm_ready/ # Intermediate “LLM-ready” processed data (local)
 ├─ prompt/ # Directory: prompt templates & system messages
 ├─ eval/ # Directory: evaluation config files + scripts
 ├─ slurm/ # HPC job scripts (Slurm) for index build & evaluation
+│
+├─ README.md # Project documentation
+├─ LICENSE # MIT License
+└─ .gitignore # Ignore rules for repo
