@@ -16,19 +16,19 @@ Key features:
 ```text
 legal_rag_assistant/
 ├─src/
-├─ app.py               # Streamlit interactive demo of the assistant
-├─ config.py            # Configuration / environment variable handling
-├─ rag_engine.py        # Core RAG engine (retriever + generator)
-├─ retriever.py         # Retrieval logic: dense, BM25, hybrid
-├─ inference.py         # LLM prompt templates and generation logic
-├─ retrieval_eval.py    # Retrieval-only evaluation CLI
-├─ e2e_eval.py          # End-to-end evaluation
-├─ data_pipeline.py     # Raw data ingestion and preprocessing pipeline
-├─ chunk_builder.py     # Chunking logic for opinions/cases
-├─ corpus_builder.py    # Corpus assembly from raw CourtListener + SCDB data
-├─ ingest.py            # Scripts to ingest into LanceDB
+│ ├─ app.py               # Streamlit interactive demo of the assistant
+│ ├─ config.py            # Configuration / environment variable handling
+│ ├─ rag_engine.py        # Core RAG engine (retriever + generator)
+│ ├─ retriever.py         # Retrieval logic: dense, BM25, hybrid
+│ ├─ inference.py         # LLM prompt templates and generation logic
+│ ├─ retrieval_eval.py    # Retrieval-only evaluation CLI
+│ ├─ e2e_eval.py          # End-to-end evaluation
+│ ├─ data_pipeline.py     # Raw data ingestion and preprocessing pipeline
+│ ├─ chunk_builder.py     # Chunking logic for opinions/cases
+│ ├─ corpus_builder.py    # Corpus assembly from raw CourtListener + SCDB data
+│ ├─ ingest.py            # Scripts to ingest into LanceDB
 │
-├─ llm_ready/           # “LLM-ready” SCDB Codebook for context augumentation
+├─ llm_ready/           # “LLM-readable” SCDB Codebook for context augumentation
 ├─ prompt/              # Directory: prompt templates & system messages
 ├─ eval/                # Directory: evaluation config files + scripts
 ├─ slurm/               # HPC job scripts (Slurm) for index build & evaluation
@@ -37,6 +37,9 @@ legal_rag_assistant/
 ├─ LICENSE
 └─ .gitignore           # Ignore rules for repo
 ```
+
+The LanceDB index is stored locally under `lancedb_legal/` (gitignored).
+Scripts to build it from the SCDB + CourtListener data will be added under `src/`
 
 ## Environment Setup
 
@@ -58,3 +61,40 @@ curl -fsSL https://ollama.com/install.sh | sh          # Install Ollama
 ollama pull mistral:7b-instruct                        # Pull the model
 ollama run mistral:7b-instruct                         # Verify the model
 ```
+
+## Roadmap / TODO
+
+This is an early building block toward a long-term vision:  
+**an AI-augmented legal assistant capable of reducing the time and cognitive load involved in complex written legal processes.**
+
+### AI Lawyer (Long-Term Vision)
+These are the innovative areas that reflect your long-term intent:
+
+- [ ] Automated drafting of:
+  - case summaries  
+  - issue briefs  
+  - motions  
+  - argument sections shaped by precedent
+
+- [ ] Automatic extraction of:
+  - holdings  
+  - procedural posture  
+  - legal tests (e.g., Chevron, Lemon, strict scrutiny)
+
+- [ ] Argument Construction Assistant:
+  Build structured arguments using:
+  - precedent patterns  
+  - doctrinal tests  
+  - multi-case synthesis  
+
+- [ ] Case Outcome Reasoning:
+  Provide probabilistic outcome reasoning grounded in:
+  - fact similarity  
+  - judge ideology scores  
+  - historical behavior  
+
+- [ ] Regulatory Compliance Assistant:
+  Map factual scenarios to relevant statutes/regulations.
+
+- [ ] Explainable Legal RAG:
+  Transparent annotation showing each generated claim and supporting case snippet.
