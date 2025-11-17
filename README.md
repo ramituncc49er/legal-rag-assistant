@@ -34,6 +34,7 @@ legal_rag_assistant/
 ├─ README.md
 ├─ LICENSE
 └─ .gitignore           # Ignore rules for repo
+```
 
 ## Environment Setup
 
