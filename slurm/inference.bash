@@ -30,7 +30,7 @@ conda activate rag_cpu
 export HF_HOME=${SLURM_TMPDIR:-/tmp}/.cache/huggingface
 # export TRANSFORMERS_CACHE=$HF_HOME
 export TOKENIZERS_PARALLELISM=false
-export HUGGING_FACE_HUB_TOKEN="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"
+export HUGGING_FACE_HUB_TOKEN="hf_####"
 echo "CUDA available?"; python - <<'PY'
 import torch; print(torch.cuda.is_available())
 PY
