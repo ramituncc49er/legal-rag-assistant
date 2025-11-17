@@ -79,20 +79,14 @@ This is an early building block toward a long-term vision:  **an AI-augmented le
   - procedural posture  
   - legal tests (e.g., Chevron, Lemon, strict scrutiny)
 
-- [ ] Argument Construction Assistant:
-  Build structured arguments using:
-  - precedent patterns  
-  - doctrinal tests  
-  - multi-case synthesis  
-
 - [ ] Case Outcome Reasoning:
   Provide probabilistic outcome reasoning grounded in:
   - fact similarity  
   - judge ideology scores  
-  - historical behavior  
+  - historical behavior
 
 - [ ] Regulatory Compliance Assistant:
   Map factual scenarios to relevant statutes/regulations.
 
-- [ ] Explainable Legal RAG:
+- [ ] Explainability:
   Transparent annotation showing each generated claim and supporting case snippet.
