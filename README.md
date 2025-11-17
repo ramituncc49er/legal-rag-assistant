@@ -14,23 +14,23 @@ Key features:
 
 ```text
 legal_rag_assistant/
-├─ app.py      # Streamlit interactive demo of the assistant
-├─ config.py      # Configuration / environment variable handling
-├─ rag_engine.py      # Core RAG engine (retriever + generator)
-├─ retriever.py      # Retrieval logic: dense, BM25, hybrid
-├─ inference.py      # LLM prompt templates and generation logic
-├─ retrieval_eval.py      # Retrieval-only evaluation CLI
-├─ e2e_eval.py      # End-to-end evaluation
-├─ data_pipeline.py      # Raw data ingestion and preprocessing pipeline
-├─ chunk_builder.py      # Chunking logic for opinions/cases
-├─ corpus_builder.py      # Corpus assembly from raw CourtListener + SCDB data
-├─ ingest.py      # Scripts to ingest into LanceDB
+├─ app.py               # Streamlit interactive demo of the assistant
+├─ config.py            # Configuration / environment variable handling
+├─ rag_engine.py        # Core RAG engine (retriever + generator)
+├─ retriever.py         # Retrieval logic: dense, BM25, hybrid
+├─ inference.py         # LLM prompt templates and generation logic
+├─ retrieval_eval.py    # Retrieval-only evaluation CLI
+├─ e2e_eval.py          # End-to-end evaluation
+├─ data_pipeline.py     # Raw data ingestion and preprocessing pipeline
+├─ chunk_builder.py     # Chunking logic for opinions/cases
+├─ corpus_builder.py    # Corpus assembly from raw CourtListener + SCDB data
+├─ ingest.py            # Scripts to ingest into LanceDB
 │
-├─ llm_ready/      # Intermediate “LLM-ready” processed data (local)
-├─ prompt/      # Directory: prompt templates & system messages
-├─ eval/      # Directory: evaluation config files + scripts
-├─ slurm/      # HPC job scripts (Slurm) for index build & evaluation
+├─ llm_ready/           # “LLM-ready” SCDB Codebook for context augumentation
+├─ prompt/              # Directory: prompt templates & system messages
+├─ eval/                # Directory: evaluation config files + scripts
+├─ slurm/               # HPC job scripts (Slurm) for index build & evaluation
 │
-├─ README.md      # Project documentation
-├─ LICENSE      # MIT License
-└─ .gitignore      # Ignore rules for repo
+├─ README.md
+├─ LICENSE
+└─ .gitignore           # Ignore rules for repo
