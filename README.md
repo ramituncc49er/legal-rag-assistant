@@ -10,7 +10,7 @@ Key features:
   <img src="figs/Legal_RAG_Assistant.png" height="600">
 </p>
 
-## 🧱 Repository Structure
+## Repository Structure
 
 ```text
 legal_rag_assistant/
@@ -41,3 +41,18 @@ legal_rag_assistant/
 - Install Python 3.11+ and set up a virtual environment.
 - Install PyTorch with CUDA support.
 - Install all dependencies: `pip install -r requirements.txt`
+
+## Models Used
+
+The Streamlit app uses **Mistral 7B Instruct** served locally through **Ollama**.
+
+- **Model:** `mistral:7b-instruct`
+- **Provider:** [Ollama](https://ollama.com/)
+
+### 🔧 Setting up Mistral in Ollama
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh          # Install Ollama
+ollama pull mistral:7b-instruct                        # Pull the model
+ollama run mistral:7b-instruct                         # Verify the model
+```
