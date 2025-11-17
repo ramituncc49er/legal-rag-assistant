@@ -3,7 +3,7 @@ This repository contains source code for a RAG-based LLM assistant for U.S. Supr
 
 Key features:
 - Dense + BM25 hybrid retrieval using LanceDB to index Supreme Court opinions.  
-- Domain-specific prompt templates tailored for question answering and citation.  
+- Domain-specific prompt templates tailored for question answering and citation.
 - End-to-end system: ingestion → chunking → embedding → retrieval → LLM inference → evaluation.
 
 <p align="center">
@@ -34,3 +34,9 @@ legal_rag_assistant/
 ├─ README.md
 ├─ LICENSE
 └─ .gitignore           # Ignore rules for repo
+
+## Environment Setup
+
+- Install Python 3.11+ and set up a virtual environment.
+- Install PyTorch with CUDA support.
+- Install all dependencies: `pip install -r requirements.txt`
