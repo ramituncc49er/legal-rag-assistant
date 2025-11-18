@@ -33,14 +33,14 @@ legal_rag_assistant/
 │ ├─ corpus_builder.py    # Corpus assembly from raw CourtListener + SCDB data
 │ ├─ ingest.py            # Scripts to ingest into LanceDB
 │
-├─ llm_ready/           # “LLM-readable” SCDB Codebook using 'marker' for context augumentation
-├─ prompt/              # Directory: prompt templates & system messages
-├─ eval/                # Directory: evaluation config files + scripts
-├─ slurm/               # HPC job scripts (Slurm) for index build & evaluation
+├─ llm_ready/             # “LLM-readable” SCDB Codebook using 'marker' for context augumentation
+├─ prompt/                # Directory: prompt templates & system messages
+├─ eval/                  # Directory: evaluation config files + scripts
+├─ slurm/                 # HPC job scripts (Slurm) for index build & evaluation
 │
 ├─ README.md
 ├─ LICENSE
-└─ .gitignore           # Ignore rules for repo
+└─ .gitignore             # Ignore rules for repo
 ```
 
 The LanceDB index is stored locally under `lancedb_legal/` (gitignored).
