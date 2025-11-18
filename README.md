@@ -92,4 +92,4 @@ This is an early building block toward a long-term vision:  **an AI-augmented le
      
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](legal-rag-assistant/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
