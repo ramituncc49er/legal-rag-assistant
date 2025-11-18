@@ -13,8 +13,8 @@ Key features:
 
 # Dataset
 
-Courtlistner: [link text](https://huggingface.co/datasets/wildphoton/courtlistener_opinions)
-Supreme Court Database: [link text](http://scdb.wustl.edu/data.php)
+- Courtlistner: [https://huggingface.co/datasets/wildphoton/courtlistener_opinions](https://huggingface.co/datasets/wildphoton/courtlistener_opinions)
+- Supreme Court Database: [http://scdb.wustl.edu/data.php](http://scdb.wustl.edu/data.php)
 
 ## Repository Structure
 
