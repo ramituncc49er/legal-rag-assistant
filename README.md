@@ -11,6 +11,11 @@ Key features:
   <img src="figs/Legal_RAG_Assistant.png" height="600">
 </p>
 
+# Dataset
+
+Courtlistner: [link text](https://huggingface.co/datasets/wildphoton/courtlistener_opinions)
+Supreme Court Database: [link text](http://scdb.wustl.edu/data.php)
+
 ## Repository Structure
 
 ```text
