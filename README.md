@@ -71,27 +71,25 @@ ollama run mistral:7b-instruct                         # Verify the model
 
 This is an early building block toward a long-term vision:  **an AI-augmented legal assistant capable of reducing the time and cognitive load involved in complex written legal processes.**
 
-### AI Lawyer (Long-Term Vision)
+### AI Legal Assistant (Long-Term Vision)
 
 - [ ] Automated drafting of:
-  - case summaries  
-  - issue briefs  
-  - motions  
-  - argument sections shaped by precedent
-
+  - case summaries and digests  
+  - issue-specific briefs and memos  
+  - comparative case overviews (e.g., “how have courts treated X across circuits”)
 - [ ] Automatic extraction of:
-  - holdings  
-  - procedural posture  
-  - legal tests (e.g., Chevron, Lemon, strict scrutiny)
+  - parties, claims, issues, holdings  
+  - procedural posture (trial, appeal, remand, etc.)
+  - legal tests and standards used in a decision
+- [ ] Semi-structured outputs to feed into downstream tools:
+  - tables of authorities  
+  - checklists for compliance or risk review  
+  - structured JSON/CSV exports for further analysis
+- [ ] Workflows to support:
+  - document review  
+  - knowledge-base curation  
+  - drafting “first versions” that humans can refine
+     
+## License
 
-- [ ] Case Outcome Reasoning:
-  Provide probabilistic outcome reasoning grounded in:
-  - fact similarity  
-  - judge ideology scores  
-  - historical behavior
-
-- [ ] Regulatory Compliance Assistant:
-  Map factual scenarios to relevant statutes/regulations.
-
-- [ ] Explainability:
-  Transparent annotation showing each generated claim and supporting case snippet.
+This project is licensed under the MIT License - see the [LICENSE](#LICENSE) file for details.
